@@ -1,0 +1,918 @@
+/*
+ Theme Name:   astra-enfant-Portfolio
+ Theme URI: http://example.com/astra-child
+ Description:  astra-enfant-Portfolio
+ Author:    Nathalie
+ Author URI:   https://www.wpastra.com
+ Template:  astra
+ Version:   1.0.0
+ License:   GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:      mon portfolio
+ Text Domain:  astrachild
+*/
+
+@font-face {
+    src: url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+NZ:wght@100..400&display=swap');
+
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+    font-family: "Playwrite NZ", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+
+body {
+    background-color: black;
+}
+
+.global {
+    max-width: 1200px;
+    /* border: 2px solid blue; */
+    display: flex;
+    margin-left: 20px;
+    height: 1950px;
+}
+
+/*********************************HEADER***************************************/
+.header-portfolio {
+    display: block;
+    justify-content: space-between;
+    background-color: black;
+    border: 3px solid yellow;
+    width: 300px;
+    padding-top: 20px;
+    height: 550px;
+    position: fixed;
+    margin-left: 10px;
+}
+
+.header-portfolio .tittle {
+    color: white;
+}
+
+.header-portfolio img {
+    width: 80%;
+    object-fit: cover;
+    margin-left: 20px;
+}
+
+.title-portfolio {
+    color: white;
+    font-size: 40px;
+    font-family: "Pacifico", cursive;
+    text-transform: uppercase;
+    align-content: center;
+    margin-left: 60px;
+}
+
+.glow {
+    /* font-size: 40px; */
+    /* color: #fff; */
+    /* text-align: center; */
+    animation: glow 1s ease-in-out infinite alternate;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+body>header>nav>div>div {
+    margin-top: 15px;
+    line-height: 80px;
+}
+
+.header-portfolio ul {
+    /* display: flex; */
+    /* margin-right: 0px; */
+    padding-top: 20px;
+}
+
+.header-portfolio li {
+    color: white;
+    font-family: "Playwrite IS", cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    list-style: none;
+    line-height: 3em;
+}
+
+a.menu-link:hover {
+    color: yellow;
+}
+
+.header-portfolio a {
+    color: white;
+}
+
+/**************************************PAGE HOME***********************************************/
+.section-portfolio {
+    margin-top: 10px;
+    margin-bottom: 300px;
+    margin-left: 350px;
+    display: flex;
+}
+
+.my {
+    background-color: black;
+    position: absolute;
+    border-radius: 80px;
+    display: flex;
+    /* border: 2px solid yellow; */
+}
+
+.section-portfolio h1 {
+    font-family: "Pacifico", cursive;
+    font-weight: 600;
+    font-size: 50px;
+    color: YELLOW;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.avatar {
+    padding-left: 30px;
+    display: flex;
+}
+
+.avatar-img {
+    width: 20%;
+    border-radius: 80px;
+    border: 6px solid white;
+    margin-left: 50px;
+}
+
+.container-typed {
+    position: absolute;
+    margin-top: 90px;
+}
+
+.typed-out {
+    overflow: hidden;
+    border-right: .15em solid white;
+    white-space: nowrap;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-size: 24px;
+    padding-top: 120px;
+    color: white;
+    animation: typing 4s steps(20, end) forwards, blinking .12s infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blinking {
+    from {
+        border-color: transparent
+    }
+
+    to {
+        border-color: black;
+    }
+}
+
+/***********************SECTION LANGAGE*********************/
+.langages {
+    /* display: flex; */
+    width: 840px;
+    height: 250px;
+    /* background-color: white; */
+    padding-top: 20px;
+    margin-left: 350px;
+    border-radius: 60px;
+}
+
+.images-langages {
+    display: flex;
+    gap: 25px;
+    /* margin-left: 20px; */
+    /* background-color: white; */
+    /* width: 620px; */
+    /* height: 150px; */
+    /* border-radius: 80px; */
+    padding-top: 40px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 25px 55px 25px 55px;
+}
+
+.langages h2 {
+    font-weight: 400;
+    color: yellow;
+    font-size: 25px;
+    font-family: "Pacifico", cursive;
+    padding-bottom: 20px;
+    margin-left: 10px;
+}
+
+.morph img {
+    width: 200px;
+    height: 150px;
+    -webkit-filter: grayscale(0) blur(0px);
+    filter: grayscale(0) blur(0px);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.morph :hover img {
+    width: 150px;
+    /* on affiche l'image au carré */
+    height: 150px;
+    border-radius: 50%;
+    /* on arrondit l'image */
+    -webkit-transform: rotate(360deg);
+    /* rotation de l'image */
+    transform: rotate(360deg);
+}
+
+
+/**********************************PAGE HOME POURQUOI*********/
+.pourquoi {
+    width: 650px;
+    margin-left: 450px;
+    margin-top: 100px;
+}
+
+.flip-card-fronti img {
+    width: 590px;
+    margin-left: 450px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 600px;
+    height: 500px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: black;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+    padding-top: 5px;
+}
+
+.flip-card-back h1 {
+    color: black;
+    font-family: "Pacifico", cursive;
+    font-weight: 600;
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.flip-card-back p {
+    color: black;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1em;
+}
+
+/*********PAGE HOME A VOIR**********/
+.A-voir {
+    width: 699px;
+    /* height: 400px; */
+    align-items: center;
+    /* position: relative; */
+    margin-left: 420px;
+    border: 2px solid yellow;
+    margin-top: 120px;
+    position: relative;
+    object-fit: cover;
+    /* margin-bottom: 50px; */
+}
+
+#monImage {
+    display: flex;
+}
+
+.monButton {
+    padding: 29px 16px;
+    /* border: none; */
+    cursor: pointer;
+    border-radius: 25px;
+    text-align: center;
+    background-color: yellow;
+    color: black;
+    font-size: 25px;
+    position: absolute;
+    margin-top: 260px;
+    margin-left: 240px;
+}
+
+.monButton:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+/****************************************PAGE CONTACT************************************/
+#primary {
+    margin: 0px;
+}
+
+#post-19>div>p.has-ast-global-color-7-color.has-text-color.has-link-color.has-x-large-font-size.wp-elements-1e3456d15f0817150b61cea7eda0892b {
+    color: white !important;
+    font-family: "Playwrite NZ", cursive;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 3em;
+}
+
+#post-19>div>p.has-medium-font-size {
+    color: white !important;
+    font-family: "Playwrite NZ", cursive;
+    font-weight: 400;
+    font-size: 20px;
+    padding-bottom: 60px;
+}
+
+.wpcf7 form {
+    border: 4px solid white;
+    padding-top: 20px;
+}
+
+.entry-content {
+    margin-left: 400px;
+    width: 700px;
+    height: 1250px;
+}
+
+.entry-content h2 {
+    color: yellow;
+    font-family: "Playwrite NZ", cursive;
+    font-weight: 400;
+    font-size: 50px;
+    padding-left: 250px;
+    margin-bottom: 40px;
+}
+
+.wpcf7 input.wpcf7-form-control:not([type=submit]),
+.wpcf7 textarea.wpcf7-form-control {
+    margin-left: 100px;
+    border: 2px solid white;
+    width: 500px;
+    height: 40px;
+    margin-top: 15px;
+}
+
+label,
+legend {
+    font-family: "Playwrite NZ", cursive;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: yellow;
+    margin-left: 20px;
+}
+
+.wpcf7 textarea.wpcf7-form-control {
+    margin-left: 70px;
+    border: 2px solid white;
+    width: 500px;
+    height: 150px;
+    margin-left: 100px;
+}
+
+.wpcf7 .wpcf7-form-control-wrap {
+    width: 263px;
+}
+
+#wpcf7-f22-p19-o1>form>p:nth-child(6)>input {
+    width: 260px;
+    height: 55px;
+    box-shadow: 0px 12px 15px 0px white;
+    border-radius: 32px;
+    margin-left: 210px;
+    background: yellow;
+    font-family: "Pacifico", cursive;
+    font-size: 22px;
+    font-weight: 400;
+    /* line-height: 17.77px; */
+    color: black;
+    border: 2px solid white;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output {
+    color: red;
+    font-family: "Pacifico", cursive;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+
+
+/*************************************PAGE REALISATIONS*********************************/
+
+header.entry-header .entry-title {
+    font-weight: 600;
+    color: white;
+    font-size: 60px;
+    font-family: "Pacifico", cursive;
+    margin-left: 500px;
+}
+
+/*.global-flip-box {
+    display: flex;
+    gap: 90px;
+    border: 4px solid yellow; 
+    margin-left: 160px;
+}*/
+
+/*.flip-box {
+    background-color: transparent;
+    width: 150px;
+    height: 150px;
+    border: 1px solid yellow; 
+    perspective: 1000px;
+    animation: rotate 8s linear infinite;  
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(20deg);
+    }
+
+    to {
+        transform: rotate(-50deg);
+    }
+}
+
+/* This container is needed to position the front and back side 
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}*/
+
+/* Do an horizontal flip when you move the mouse over the flip box container 
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+    animation: rotate 8s linear infinite;
+}*/
+
+/* Position the front and back side 
+.flip-box-front,
+.flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+   
+    backface-visibility: hidden;
+}*/
+
+/*.flip-box-back h2 {
+    font-family: "Playwrite IS", cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-top: 25px;
+}
+
+.flip-box-back p {
+    font-family: "Playwrite IS", cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: uppercase; 
+    padding-top: 15px;
+    color: black;
+}*/
+
+/* Style the front side (fallback if image is missing) 
+.flip-box-front {
+    background-color: #bbb;
+    color: black;
+}*/
+
+/* Style the back side 
+.flip-box-back {
+    background-color: yellow;
+    color: white;
+    transform: rotateY(180deg);
+}*/
+
+/**************************************SLIDE********************************************/
+
+.section-portfolio {
+    /* margin-top: 10px; */
+    margin-bottom: 300px;
+    margin-left: 350px;
+    /* border: 2px solid red; */
+    display: flex;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/***************************TEMPLATE MES REALISATIONS************************************/
+.realisations {
+    background-color: black;
+}
+
+.realisations h2 {
+    font-family: "Playwrite NZ", cursive;
+    font-weight: 400;
+    font-size: 50px;
+    color: yellow;
+    margin-left: 360px;
+    margin-bottom: 25px;
+    /* margin-top: 10px; */
+}
+
+.banner-title {
+    display: flex;
+    margin-left: 20px;
+}
+
+.banner {
+    background-image: url(./assets/images/banner.png);
+    /* min-height: 206px; */
+    background-size: cover;
+    /* display: flex; */
+    align-items: center;
+    position: relative;
+    margin-left: 350px;
+    border: 2px solid yellow;
+    width: 850px;
+    margin-bottom: 55px;
+}
+
+.banner img {
+    width: 40%;
+    overflow: hidden;
+    position: absolute;
+    margin-left: 250px;
+    margin-top: 90px;
+}
+
+#background-video {
+    width: 850px;
+    margin-top: 0px;
+    /* border: 4px solid yellow; */
+}
+
+/******************PROJET EXPLICATIONS  KOUKAKI *******************/
+.projets-explications {
+    /* border: 2px solid yellow; */
+    width: 790px;
+    margin-left: 40px;
+    /* height: 350px; */
+    align-content: center;
+    padding-top: 20px;
+}
+
+.projets-title-h3 {
+    display: flex;
+}
+
+.projets-explications h3 {
+    color: yellow;
+    font-family: "Playwrite NZ", cursive;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.projets-explications p {
+    color: white;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.etapes {
+    /* margin-top: 10px; */
+    margin-left: 20px;
+}
+
+.clicky {
+    margin-left: 10px;
+    background-color: yellow;
+    color: black;
+    margin-bottom: 30px;
+    /* height: 0px; */
+}
+
+.clicky:hover {
+    background-color: white !important;
+    color: black;
+}
+
+#demo {
+    color: white;
+    font-family: "Playwrite NZ", cursive;
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 10px;
+    width: 810px;
+    margin-top: 20px;
+}
+
+
+/************************PROJET CHIC DRESSING**********************/
+.Chic {
+    align-items: center;
+    position: relative;
+    margin-left: 350px;
+    border: 2px solid yellow;
+    width: 850px;
+}
+
+.Chic img {
+    width: 900px;
+    /* overflow: hidden; */
+    position: absolute;
+    /* padding-left: 180px; */
+    object-fit: cover;
+    /* margin-top: 50px; */
+    /* border: 4px solid yellow; */
+    /* height: 400px; */
+}
+
+
+.projets2 h2 {
+    font-family: "Playwrite NZ", cursive;
+    font-weight: 400;
+    font-size: 50px;
+    color: yellow;
+    margin-left: 360px;
+    margin-bottom: 15px;
+    margin-top: 80px;
+}
+
+.chic-explications {
+    /* width: 790px; */
+    margin-left: 40px;
+    /* height: 350px; */
+    align-content: center;
+    padding-top: 370px;
+}
+
+.chic-title h3 {
+    color: yellow;
+    font-family: "Playwrite NZ", cursive;
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.chic-explications p {
+    color: white;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.etapes2 {
+    /* margin-top: 10px; */
+    margin-left: 20px;
+}
+
+.clicko {
+    margin-left: 10px;
+    background-color: yellow;
+    color: black;
+    margin-bottom: 30px;
+    /* height: 0px; */
+}
+
+.clicko:hover {
+    background-color: white !important;
+    color: black;
+}
+
+#demo2 {
+    color: white;
+    font-family: "Playwrite NZ", cursive;
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 10px;
+    width: 810px;
+    margin-top: 20px;
+}
+
+
+
+/*****************************PAGE MON PARCOURS*********************************/
+.fenetre {
+    position: absolute;
+    /* top: 20px; */
+    width: 100%;
+    will-change: transform, opacity;
+    transition: all 0.3s ease-out 0s;
+    display: flex;
+}
+
+.block-fenetre {
+    margin: 0px auto;
+    max-width: 840px;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    margin-left: 320px;
+}
+
+.fenetre-title {
+    font-size: 36px;
+    font-family: "Pacifico", cursive;
+    line-height: 48px;
+    font-weight: 600;
+    color: rgb(230 230 23);
+    /* vertical-align: inherit; */
+    margin-bottom: 20px;
+    animation: mymove 5s infinite;
+    animation-delay: 2s;
+    position: relative;
+}
+
+
+@keyframes mymove {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 200px;
+    }
+}
+
+.monHistoire {
+    font-size: 18px;
+    font-family: "Playwrite NZ", cursive;
+    color: rgb(243 248 240);
+    line-height: 48px;
+    font-weight: 400;
+    /* vertical-align: inherit; */
+    letter-spacing: 0.8px;
+}
+
+.photo {
+    width: 20%;
+    object-fit: cover;
+    margin-bottom: 12px;
+    border-radius: 24px;
+    margin-top: 25px;
+}
+
+#myBtn {
+    background-color: yellow;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Pacifico", cursive;
+    color: black;
+    width: 250px;
+    height: 40px;
+    padding: 5px;
+}
+
+
+#more {
+    display: none;
+}
+
+
+/********************SECTION FORMATIONS************************/
+
+.loisirs {
+    width: 750px;
+    margin-left: 420px;
+    margin-bottom: 90px;
+    border: 2px solid yellow;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("images/code.jpg");
+
+    /* Set a specific height */
+    height: 250px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+/***************************************FOOTER********************************************/
+.myfooter {
+    /* color: yellow !important; */
+    background-color: black;
+    padding-top: 0px !important;
+    /* padding-bottom: 4px !important; */
+    border: 3px solid yellow;
+    width: 884px;
+    margin-left: 340px;
+    display: flex;
+    gap: 95px;
+    /* position: fixed; */
+}
+
+
+.myfooter img {
+    width: 90px;
+    height: 60px;
+    object-fit: cover;
+    margin-left: 85px;
+    /* border: 2px solid white; */
+    margin-top: 30px;
+}
+
+ul.my-footer-menu {
+    list-style: none;
+    font-family: "Playwrite IS", cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    margin-top: 35px;
+}
+
+.my-footer-menu a {
+    color: black;
+}
+
+
+.menu-footer-portfolio-container {
+    display: flex;
+    border-color: white;
+    padding-left: 90px;
+}
+
+.my-footer-menu {
+    border-top: 2px solid black;
+    background-color: white;
+    margin-left: 0px;
+}
