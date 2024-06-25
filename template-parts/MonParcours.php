@@ -5,17 +5,17 @@
 ?>
 <?php get_header(); ?>
 
-<main class="Parcours">
-    <div class="fenetre">
-        <div class="block-fenetre">
-            <h2 class="fenetre-title">Voici mon histoire</h2>
+<section>
+    <div class="Parcours">
+        <div class="MonParcours">
+            <h2 class="parcours-title">Voici mon histoire</h2>
+
             <p class="monHistoire">
                 Apprenez-en un peu plus sur moi, comment je me suis lancé dans le web et comment j'ai construit ma carrière.................
             </p>
             <p class="monHistoire">
                 Depuis mon enfance, j'ai toujours était créative et une passion pour le dessin. Je me voyais déjà en faire mais métier mais le destin en a décider autrement.
             </p>
-
             <p class="monHistoire">
                 Plus tard, je me suis passionnée pour l'informatique et les nouvelles technologies. Mais commençons par le début de ma carrière professionnelle. Après avoir fait des études dans le secrétariat,
                 j'ai recherché mon premier job et j'ai étais embauché en tant que vendeuse/caissière OUI JE SAIS RIEN A VOIR mais j'avais besoin de ce travail.
@@ -34,15 +34,28 @@
         </div>
     </div>
     </div>
+    </div>
+</section>
+
+<section class="formation">
+    <div class="parallax"></div>
+    <div style="height:490px;background-color:white;font-size:35px;font-family:'Playwrite NZ', cursive;padding-top:15px;font-weight:600;padding-left:150px;color:black;border:12px solid black">
+        Ma formation :<br>
+        <img class="mesImages" src="<?= get_stylesheet_directory_uri() . '/images/image1.png' ?>">
+        <img class="mesImages" src="<?= get_stylesheet_directory_uri() . '/images/image2.png' ?>">
+        <img class="mesImages2" src="<?= get_stylesheet_directory_uri() . '/images/image3.png' ?>">
+        <img class="mesImages2" src="<?= get_stylesheet_directory_uri() . '/images/image4.png' ?>">
+        <img class="mesImages3" src="<?= get_stylesheet_directory_uri() . '/images/image5.png' ?>">
+        <img class="mesImages3" src="<?= get_stylesheet_directory_uri() . '/images/image6.png' ?>">
+    </div>
+    </div>
+</section>
 
 
 
-    <section class="loisirs">
-        <div class="parallax"></div>
-        <div style="height:850px;background-color:white;font-size:36px">
-            Ma formation.
-        </div>
-    </section>
 
-</main>
+
+
+</section>
+
 <?php get_footer(); ?>

@@ -58,6 +58,25 @@
         </div>
     </section>
 
+    <section class="hobby">
 
+        <h2>Mes loisirs</h2>
+        <p>Cliquez sur le dessin pour l'agrandir</p>
+        <div class="loisirs">
+            <img src="<?= get_stylesheet_directory_uri() . '/images/dessin.png'; ?>" id="myImg" alt=" Dessin" style="width:100%;max-width:300px;margin-left:150px">
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
+            <div id="caption"></div>
+        </div>
+    </section>
+
+    <section class="musique">
+        <h3>Musique</h3>
+        <img src="<?= get_stylesheet_directory_uri() . '/images/guitare.png'; ?>" alt=" Guitare">
+        </div>
+    </section>
 </main>
 <?php get_footer(); ?>

@@ -27,16 +27,13 @@
 
 
 body {
+    height: 100%;
+    margin: 0;
+    max-width: 1440px;
     background-color: black;
 }
 
-.global {
-    max-width: 1200px;
-    /* border: 2px solid blue; */
-    display: flex;
-    margin-left: 20px;
-    height: 1950px;
-}
+
 
 /*********************************HEADER***************************************/
 .header-portfolio {
@@ -44,11 +41,10 @@ body {
     justify-content: space-between;
     background-color: black;
     border: 3px solid yellow;
-    width: 300px;
-    padding-top: 20px;
+    width: 250px;
+    padding-top: 40px;
     height: 550px;
     position: fixed;
-    margin-left: 10px;
 }
 
 .header-portfolio .tittle {
@@ -71,11 +67,11 @@ body {
 }
 
 .glow {
-    /* font-size: 40px; */
+    font-size: 30px;
     /* color: #fff; */
     /* text-align: center; */
     animation: glow 1s ease-in-out infinite alternate;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-left: 30px;
 }
 
@@ -95,9 +91,8 @@ body>header>nav>div>div {
 }
 
 .header-portfolio ul {
-    /* display: flex; */
-    /* margin-right: 0px; */
     padding-top: 20px;
+    margin-left: 20px;
 }
 
 .header-portfolio li {
@@ -119,7 +114,9 @@ a.menu-link:hover {
     color: white;
 }
 
-/**************************************PAGE HOME***********************************************/
+/**********************************************PAGE HOME******************************************************/
+
+/*SECTION PORTFOLIO*/
 .section-portfolio {
     margin-top: 10px;
     margin-bottom: 300px;
@@ -132,7 +129,7 @@ a.menu-link:hover {
     position: absolute;
     border-radius: 80px;
     display: flex;
-    /* border: 2px solid yellow; */
+    padding-top: 30px;
 }
 
 .section-portfolio h1 {
@@ -153,12 +150,13 @@ a.menu-link:hover {
     width: 20%;
     border-radius: 80px;
     border: 6px solid white;
-    margin-left: 50px;
+    margin-left: 120px;
 }
 
 .container-typed {
     position: absolute;
-    margin-top: 90px;
+    margin-top: 230px;
+    /* margin-left: 20px; */
 }
 
 .typed-out {
@@ -167,8 +165,7 @@ a.menu-link:hover {
     white-space: nowrap;
     font-family: "Pacifico", cursive;
     font-weight: 400;
-    font-size: 24px;
-    padding-top: 120px;
+    font-size: 23px;
     color: white;
     animation: typing 4s steps(20, end) forwards, blinking .12s infinite;
 }
@@ -193,25 +190,18 @@ a.menu-link:hover {
     }
 }
 
-/***********************SECTION LANGAGE*********************/
+/*SECTION LANGAGE*/
 .langages {
-    /* display: flex; */
     width: 840px;
     height: 250px;
-    /* background-color: white; */
-    padding-top: 20px;
-    margin-left: 350px;
+    padding-top: 80px;
+    margin-left: 290px;
     border-radius: 60px;
 }
 
 .images-langages {
     display: flex;
     gap: 25px;
-    /* margin-left: 20px; */
-    /* background-color: white; */
-    /* width: 620px; */
-    /* height: 150px; */
-    /* border-radius: 80px; */
     padding-top: 40px;
     background-color: white;
     padding: 30px;
@@ -248,11 +238,11 @@ a.menu-link:hover {
 }
 
 
-/**********************************PAGE HOME POURQUOI*********/
+/*PAGE HOME POURQUOI*/
 .pourquoi {
     width: 650px;
-    margin-left: 450px;
-    margin-top: 100px;
+    margin-left: 420px;
+    margin-top: 120px;
 }
 
 .flip-card-fronti img {
@@ -317,18 +307,16 @@ a.menu-link:hover {
     line-height: 1em;
 }
 
-/*********PAGE HOME A VOIR**********/
+/*SECTION A VOIR*/
 .A-voir {
     width: 699px;
-    /* height: 400px; */
     align-items: center;
-    /* position: relative; */
-    margin-left: 420px;
+    margin-left: 380px;
     border: 2px solid yellow;
     margin-top: 120px;
     position: relative;
     object-fit: cover;
-    /* margin-bottom: 50px; */
+    margin-bottom: 50px;
 }
 
 #monImage {
@@ -337,7 +325,6 @@ a.menu-link:hover {
 
 .monButton {
     padding: 29px 16px;
-    /* border: none; */
     cursor: pointer;
     border-radius: 25px;
     text-align: center;
@@ -355,8 +342,166 @@ a.menu-link:hover {
 }
 
 
+/*SECTION LOISIRS*/
+.loisirs {
+    /* width: 300px; */
+    /* align-items: center; */
+    /* margin-left: 380px; */
+    /* border: 4px solid yellow; */
+    /* margin-top: 40px; */
+    /* position: relative; */
+    object-fit: cover;
+    /* margin-bottom: 50px; */
+    /* margin-left: 20px; */
+    /* height: 360px; */
+    /* display: flex; */
+}
 
-/****************************************PAGE CONTACT************************************/
+.hobby {
+    margin-left: 380px;
+    width: 600px;
+    border: 3px solid yellow;
+    margin-top: 120px;
+    height: 550px;
+}
+
+.hobby h2 {
+    color: white;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-size: 42px;
+    margin-left: 200px;
+    margin-bottom: 38px;
+    padding-top: 30px;
+}
+
+.hobby p {
+    color: yellow;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-size: 17px;
+    margin-left: 167px;
+}
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {
+    opacity: 0.7;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content,
+#caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}
+
+.musique {
+    margin-left: 380px;
+    margin-top: 80px;
+}
+
+.musique h3 {
+    color: yellow;
+    font-family: "Pacifico", cursive;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+
+.musique img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border: 4px solid white;
+    margin-bottom: 50px;
+}
+
+/***********************************************PAGE CONTACT***************************************************/
+
 #primary {
     margin: 0px;
 }
@@ -365,27 +510,28 @@ a.menu-link:hover {
     color: white !important;
     font-family: "Playwrite NZ", cursive;
     font-weight: 400;
-    font-size: 30px;
-    line-height: 3em;
+    font-size: 35px;
+    line-height: 2em;
 }
 
 #post-19>div>p.has-medium-font-size {
     color: white !important;
     font-family: "Playwrite NZ", cursive;
     font-weight: 400;
-    font-size: 20px;
     padding-bottom: 60px;
+    width: 600px;
+    margin-left: 0px;
+    line-height: 2.5em;
 }
 
 .wpcf7 form {
-    border: 4px solid white;
-    padding-top: 20px;
+    border: 2px solid white;
+    padding-top: 40px;
+    width: 800px;
 }
 
 .entry-content {
-    margin-left: 400px;
-    width: 700px;
-    height: 1250px;
+    margin-left: 320px;
 }
 
 .entry-content h2 {
@@ -439,7 +585,6 @@ legend {
     font-family: "Pacifico", cursive;
     font-size: 22px;
     font-weight: 400;
-    /* line-height: 17.77px; */
     color: black;
     border: 2px solid white;
     margin-bottom: 40px;
@@ -454,116 +599,6 @@ legend {
 }
 
 
-
-/*************************************PAGE REALISATIONS*********************************/
-
-header.entry-header .entry-title {
-    font-weight: 600;
-    color: white;
-    font-size: 60px;
-    font-family: "Pacifico", cursive;
-    margin-left: 500px;
-}
-
-/*.global-flip-box {
-    display: flex;
-    gap: 90px;
-    border: 4px solid yellow; 
-    margin-left: 160px;
-}*/
-
-/*.flip-box {
-    background-color: transparent;
-    width: 150px;
-    height: 150px;
-    border: 1px solid yellow; 
-    perspective: 1000px;
-    animation: rotate 8s linear infinite;  
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(20deg);
-    }
-
-    to {
-        transform: rotate(-50deg);
-    }
-}
-
-/* This container is needed to position the front and back side 
-.flip-box-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}*/
-
-/* Do an horizontal flip when you move the mouse over the flip box container 
-.flip-box:hover .flip-box-inner {
-    transform: rotateY(180deg);
-    animation: rotate 8s linear infinite;
-}*/
-
-/* Position the front and back side 
-.flip-box-front,
-.flip-box-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; 
-   
-    backface-visibility: hidden;
-}*/
-
-/*.flip-box-back h2 {
-    font-family: "Playwrite IS", cursive;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    text-transform: uppercase;
-    padding-top: 25px;
-}
-
-.flip-box-back p {
-    font-family: "Playwrite IS", cursive;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    text-transform: uppercase; 
-    padding-top: 15px;
-    color: black;
-}*/
-
-/* Style the front side (fallback if image is missing) 
-.flip-box-front {
-    background-color: #bbb;
-    color: black;
-}*/
-
-/* Style the back side 
-.flip-box-back {
-    background-color: yellow;
-    color: white;
-    transform: rotateY(180deg);
-}*/
-
-/**************************************SLIDE********************************************/
-
-.section-portfolio {
-    /* margin-top: 10px; */
-    margin-bottom: 300px;
-    margin-left: 350px;
-    /* border: 2px solid red; */
-    display: flex;
-}
-
-* {
-    box-sizing: border-box;
-}
-
 /***************************TEMPLATE MES REALISATIONS************************************/
 .realisations {
     background-color: black;
@@ -574,9 +609,8 @@ header.entry-header .entry-title {
     font-weight: 400;
     font-size: 50px;
     color: yellow;
-    margin-left: 360px;
+    margin-left: 290px;
     margin-bottom: 25px;
-    /* margin-top: 10px; */
 }
 
 .banner-title {
@@ -586,12 +620,10 @@ header.entry-header .entry-title {
 
 .banner {
     background-image: url(./assets/images/banner.png);
-    /* min-height: 206px; */
     background-size: cover;
-    /* display: flex; */
     align-items: center;
     position: relative;
-    margin-left: 350px;
+    margin-left: 290px;
     border: 2px solid yellow;
     width: 850px;
     margin-bottom: 55px;
@@ -608,15 +640,12 @@ header.entry-header .entry-title {
 #background-video {
     width: 850px;
     margin-top: 0px;
-    /* border: 4px solid yellow; */
 }
 
 /******************PROJET EXPLICATIONS  KOUKAKI *******************/
 .projets-explications {
-    /* border: 2px solid yellow; */
     width: 790px;
     margin-left: 40px;
-    /* height: 350px; */
     align-content: center;
     padding-top: 20px;
 }
@@ -642,7 +671,6 @@ header.entry-header .entry-title {
 }
 
 .etapes {
-    /* margin-top: 10px; */
     margin-left: 20px;
 }
 
@@ -651,7 +679,6 @@ header.entry-header .entry-title {
     background-color: yellow;
     color: black;
     margin-bottom: 30px;
-    /* height: 0px; */
 }
 
 .clicky:hover {
@@ -674,20 +701,15 @@ header.entry-header .entry-title {
 .Chic {
     align-items: center;
     position: relative;
-    margin-left: 350px;
+    margin-left: 290px;
     border: 2px solid yellow;
     width: 850px;
 }
 
 .Chic img {
     width: 900px;
-    /* overflow: hidden; */
     position: absolute;
-    /* padding-left: 180px; */
     object-fit: cover;
-    /* margin-top: 50px; */
-    /* border: 4px solid yellow; */
-    /* height: 400px; */
 }
 
 
@@ -702,9 +724,7 @@ header.entry-header .entry-title {
 }
 
 .chic-explications {
-    /* width: 790px; */
     margin-left: 40px;
-    /* height: 350px; */
     align-content: center;
     padding-top: 370px;
 }
@@ -726,7 +746,6 @@ header.entry-header .entry-title {
 }
 
 .etapes2 {
-    /* margin-top: 10px; */
     margin-left: 20px;
 }
 
@@ -735,7 +754,6 @@ header.entry-header .entry-title {
     background-color: yellow;
     color: black;
     margin-bottom: 30px;
-    /* height: 0px; */
 }
 
 .clicko:hover {
@@ -755,37 +773,35 @@ header.entry-header .entry-title {
 
 
 
-/*****************************PAGE MON PARCOURS*********************************/
+/**********************************PAGE MON PARCOURS**************************************/
+
+.MonParcours {
+    align-items: center;
+    position: relative;
+    margin-left: 290px;
+    width: 850px;
+    flex-direction: column;
+}
+
 .fenetre {
     position: absolute;
-    /* top: 20px; */
     width: 100%;
     will-change: transform, opacity;
     transition: all 0.3s ease-out 0s;
     display: flex;
 }
 
-.block-fenetre {
-    margin: 0px auto;
-    max-width: 840px;
-    padding: 40px 60px;
-    display: flex;
-    flex-direction: column;
-    /* align-items: flex-start; */
-    margin-left: 320px;
-}
-
-.fenetre-title {
+.parcours-title {
     font-size: 36px;
     font-family: "Pacifico", cursive;
     line-height: 48px;
     font-weight: 600;
     color: rgb(230 230 23);
-    /* vertical-align: inherit; */
     margin-bottom: 20px;
     animation: mymove 5s infinite;
     animation-delay: 2s;
     position: relative;
+    margin-left: 320px;
 }
 
 
@@ -799,13 +815,14 @@ header.entry-header .entry-title {
     }
 }
 
+
 .monHistoire {
     font-size: 18px;
     font-family: "Playwrite NZ", cursive;
     color: rgb(243 248 240);
     line-height: 48px;
     font-weight: 400;
-    /* vertical-align: inherit; */
+    vertical-align: inherit;
     letter-spacing: 0.8px;
 }
 
@@ -815,6 +832,7 @@ header.entry-header .entry-title {
     margin-bottom: 12px;
     border-radius: 24px;
     margin-top: 25px;
+    margin-left: 350px;
 }
 
 #myBtn {
@@ -827,19 +845,19 @@ header.entry-header .entry-title {
     width: 250px;
     height: 40px;
     padding: 5px;
+    margin-bottom: 120px;
 }
-
 
 #more {
     display: none;
 }
 
 
-/********************SECTION FORMATIONS************************/
+/*SECTION FORMATIONS*/
 
-.loisirs {
+.formation {
     width: 750px;
-    margin-left: 420px;
+    margin-left: 340px;
     margin-bottom: 90px;
     border: 2px solid yellow;
 }
@@ -858,61 +876,30 @@ header.entry-header .entry-title {
     background-size: cover;
 }
 
-
-
-
-
-
-
-
+img.mesImages,
+img.mesImages2,
+img.mesImages3 {
+    width: 200px;
+    margin-top: 20px;
+    height: 100px;
+}
 
 
 /***************************************FOOTER********************************************/
-.myfooter {
-    /* color: yellow !important; */
+
+.pied-de-page {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 80px;
+    height: 500px;
     background-color: black;
-    padding-top: 0px !important;
-    /* padding-bottom: 4px !important; */
+    padding: 20px;
     border: 3px solid yellow;
-    width: 884px;
-    margin-left: 340px;
-    display: flex;
-    gap: 95px;
-    /* position: fixed; */
+    display: block;
+    padding-top: 100px;
 }
 
-
-.myfooter img {
-    width: 90px;
-    height: 60px;
-    object-fit: cover;
-    margin-left: 85px;
-    /* border: 2px solid white; */
+.pied-de-page img {
     margin-top: 30px;
-}
-
-ul.my-footer-menu {
-    list-style: none;
-    font-family: "Playwrite IS", cursive;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 34px;
-    margin-top: 35px;
-}
-
-.my-footer-menu a {
-    color: black;
-}
-
-
-.menu-footer-portfolio-container {
-    display: flex;
-    border-color: white;
-    padding-left: 90px;
-}
-
-.my-footer-menu {
-    border-top: 2px solid black;
-    background-color: white;
-    margin-left: 0px;
 }
