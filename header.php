@@ -13,17 +13,26 @@
     <?php wp_head(); ?>
 </head>
 
-<div class="global">
-    <header>
-        <nav>
-            <div class="header-portfolio">
-                <img src="<?php echo get_stylesheet_directory_uri() . '/images/Logo-wp.png'; ?> " alt="photo de mon logo">
-                <h3 class="title-portfolio glow">Portfolio</h3>
-                <?php wp_nav_menu([
-                    'theme_location' => 'header-menu',
-                    'container' => false,
-                    'menu_class' => 'liste menu'
-                ])     ?>
+<header>
+    <nav>
+
+
+        <div class="header-portfolio">
+            <img src="<?php echo get_stylesheet_directory_uri() . '/images/Logo-wp.png'; ?> " alt="photo de mon logo">
+            <h3 class="title-portfolio glow">Portfolio</h3>
+
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-        </nav>
-    </header>
+
+            <?php wp_nav_menu([
+                'theme_location' => 'header-menu',
+                'container' => false,
+                'menu_class' => 'liste menu'
+            ])     ?>
+        </div>
+
+    </nav>
+</header>

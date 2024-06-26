@@ -51,3 +51,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+/*******************************************MENU BURGER******************************/
+$(document).ready(function () {
+    $('#mobile-menu').click(function () {
+        $(this).toggleClass('is-active');
+        $('.menu').toggleClass('active');
+    });
+});
+

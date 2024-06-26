@@ -26,12 +26,15 @@
 }
 
 
+
+
 body {
     height: 100%;
     margin: 0;
     max-width: 1440px;
     background-color: black;
 }
+
 
 
 
@@ -45,6 +48,9 @@ body {
     padding-top: 40px;
     height: 550px;
     position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 .header-portfolio .tittle {
@@ -114,6 +120,67 @@ a.menu-link:hover {
     color: white;
 }
 
+/* Menu burger */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .header-portfolio {
+        width: 100%;
+        height: 50px;
+        /* position: fixed; */
+        margin-top: 0px;
+    }
+
+    .header-portfolio img {
+        width: 30%;
+        /* margin-left: 220px; */
+        /* margin-top: 40px; */
+    }
+
+    .title-portfolio {
+        font-size: 40px;
+        margin-left: 225px;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-right: 90px;
+    }
+
+    .header-portfolio ul {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        flex-direction: column;
+    }
+
+    .header-portfolio ul.show {
+        display: flex;
+    }
+
+    .header-portfolio li {
+        text-align: center;
+    }
+}
+
 /**********************************************PAGE HOME******************************************************/
 
 /*SECTION PORTFOLIO*/
@@ -137,8 +204,8 @@ a.menu-link:hover {
     font-weight: 600;
     font-size: 50px;
     color: YELLOW;
-    margin-left: 30px;
-    margin-top: 30px;
+    padding-left: 50px;
+    padding-top: 30px;
 }
 
 .avatar {
@@ -156,7 +223,7 @@ a.menu-link:hover {
 .container-typed {
     position: absolute;
     margin-top: 230px;
-    /* margin-left: 20px; */
+    margin-left: 20px;
 }
 
 .typed-out {
@@ -187,6 +254,49 @@ a.menu-link:hover {
 
     to {
         border-color: black;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .section-portfolio {
+        /* margin-left: 0; */
+        /* margin-bottom: 100px; */
+        flex-direction: column;
+        align-items: center;
+        margin-top: 200px;
+    }
+
+    .my {
+        flex-direction: column;
+        padding: 90px;
+        /* border-radius: 20px; */
+        margin-top: 80px;
+    }
+
+    .section-portfolio h1 {
+        /* font-size: 30px; */
+        /* margin-left: 0; */
+        /* margin-top: 10px; */
+        /* text-align: center; */
+        padding-left: 5px;
+    }
+
+    .avatar-img {
+        width: 30%;
+        margin-left: 0;
+    }
+
+    .container-typed {
+        position: relative;
+        margin-top: 20px;
+    }
+
+    .typed-out {
+        font-size: 18px;
+        /* text-align: center; */
+        /* padding-left: 20px; */
+        /* font-size: 2px; */
     }
 }
 
@@ -342,6 +452,85 @@ a.menu-link:hover {
 }
 
 
+/********************VERSION MOBILE***********************/
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+    /*SECTION LANGAGE*/
+    .langages {
+        /* width: 100%; */
+        height: auto;
+        padding-top: 250px;
+        margin-left: 4%;
+        /* margin-bottom: 30px; */
+        /* Ajusté pour espacer les sections */
+        /* border-radius: 30px; */
+        /* display: flex; */
+    }
+
+    .images-langages {
+        /* flex-direction: column; */
+        /* gap: 15px; */
+        padding: 40px;
+    }
+
+    .langages h2 {
+        font-size: 20px;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+
+    .morph img {
+        width: 100%;
+        height: auto;
+    }
+
+    /*PAGE HOME POURQUOI*/
+    .pourquoi {
+        /* width: 90%; */
+        margin-left: 20%;
+        /* margin-top: 60px; */
+        margin-bottom: 30px;
+        /* Ajusté pour espacer les sections */
+    }
+
+    .flip-card-fronti img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .flip-card {
+        width: 90%;
+        /* height: auto; */
+    }
+
+    .flip-card-back h1 {
+        font-size: 25px;
+    }
+
+    .flip-card-back p {
+        font-size: 18px;
+    }
+
+    /*SECTION A VOIR*/
+    .A-voir {
+        /* width: 90%; */
+        margin-left: 10%;
+        /* margin-top: 60px; */
+        margin-bottom: 30px;
+        /* Ajusté pour espacer les sections */
+    }
+
+    .monButton {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+
+
 /*SECTION LOISIRS*/
 .loisirs {
     /* width: 300px; */
@@ -363,6 +552,8 @@ a.menu-link:hover {
     border: 3px solid yellow;
     margin-top: 120px;
     height: 550px;
+    margin-bottom: 50px;
+    /* Ajouté pour espacer les sections */
 }
 
 .hobby h2 {
@@ -392,6 +583,33 @@ a.menu-link:hover {
 #myImg:hover {
     opacity: 0.7;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+    /*SECTION HOBBY*/
+    .hobby {
+        margin-left: 20%;
+        margin-bottom: 30px;
+    }
+
+    .hobby h2 {
+        font-size: 32px;
+        /* Taille de police réduite pour les petits écrans */
+        margin-left: 0;
+        text-align: center;
+        /* Centrer le texte */
+    }
+
+    .hobby p {
+        font-size: 15px;
+        /* Taille de police réduite pour les petits écrans */
+        margin-left: 0;
+        text-align: center;
+        /* Centrer le texte */
+    }
+}
+
 
 /* The Modal (background) */
 .modal {
@@ -500,7 +718,89 @@ a.menu-link:hover {
     margin-bottom: 50px;
 }
 
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .musique {
+        width: 90%;
+        margin-left: 70%;
+        margin-top: 60px;
+        margin-bottom: 30px;
+        /* Ajusté pour espacer les sections */
+        height: auto;
+    }
+
+    .musique h3 {
+        margin-left: 50px;
+        /* text-align: center; */
+    }
+
+    .musique img {
+        width: 250px;
+        height: 350px;
+        object-fit: cover;
+        border: 4px solid white;
+        margin-bottom: 50px;
+    }
+}
+
 /***********************************************PAGE CONTACT***************************************************/
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #post-19>div {
+        margin-left: 3px;
+    }
+
+    #post-19>div>p.has-ast-global-color-7-color.has-text-color.has-link-color.has-x-large-font-size.wp-elements-1e3456d15f0817150b61cea7eda0892b {
+        color: white !important;
+        font-family: "Playwrite NZ", cursive;
+        font-size: 12px;
+    }
+
+    #post-19 {
+        margin-top: 300px;
+        flex-direction: column;
+    }
+
+    .header-portfolio {
+        width: 100%;
+        height: 50px;
+    }
+
+    .header-portfolio img {
+        width: 220px;
+        margin-left: 220px;
+        margin-top: 40px;
+    }
+
+    .title-portfolio {
+        font-size: 40px;
+        margin-left: 225px;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-right: 90px;
+    }
+
+    .header-portfolio ul {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        flex-direction: column;
+    }
+
+    .header-portfolio ul.show {
+        display: flex;
+    }
+
+    .header-portfolio li {
+        text-align: center;
+    }
+}
 
 #primary {
     margin: 0px;
@@ -642,6 +942,27 @@ legend {
     margin-top: 0px;
 }
 
+
+@media (max-width: 768px) {
+    .realisations {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 200px;
+    }
+
+    .banner {
+        flex-direction: column;
+        margin-top: 120px;
+        margin-left: 122px;
+    }
+
+    .banner img {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+}
+
+
 /******************PROJET EXPLICATIONS  KOUKAKI *******************/
 .projets-explications {
     width: 790px;
@@ -772,6 +1093,20 @@ legend {
 }
 
 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .projet2 {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 200px;
+    }
+
+    .chic {
+        flex-direction: column;
+        margin-top: 120px;
+        margin-left: 122px;
+    }
+}
 
 /**********************************PAGE MON PARCOURS**************************************/
 
@@ -851,6 +1186,31 @@ legend {
 #more {
     display: none;
 }
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .MonParcours {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 350px;
+        margin-left: 45px;
+    }
+
+    .Parcours {
+        flex-direction: column;
+        /* margin-top: 120px; */
+        margin-left: 22px;
+    }
+
+    .formation {
+        /* margin-left: 22px; */
+        /* width: 80%; */
+        margin-left: 120px;
+    }
+
+}
+
 
 
 /*SECTION FORMATIONS*/

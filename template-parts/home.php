@@ -59,7 +59,6 @@
     </section>
 
     <section class="hobby">
-
         <h2>Mes loisirs</h2>
         <p>Cliquez sur le dessin pour l'agrandir</p>
         <div class="loisirs">
