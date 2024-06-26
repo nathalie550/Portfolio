@@ -19,7 +19,7 @@
         <a href="https://www.linkedin.com/in/nathalie-jean-315311316/" class="monButtonLinkedin">Lien</a>
 
         <img src="<?= get_stylesheet_directory_uri() . '/images/github.png'; ?>" style="width:70px;height:50px;" alt="photo Github">
-        <a href="https://github.com/nathalie550/Portfolio/" class="monButtonGithub">Lien</a>
+        <a href="https://github.com/nathalie550" class="monButtonGithub">Lien</a>
 
         <?php
         if (has_nav_menu('footer-menu')) :
